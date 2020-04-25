@@ -1,37 +1,45 @@
 
-Clover EFI installer log - Thu Apr 16 14:52:44 IST 2020
-Installer version: v2.5k r5102 EFI bootloader
+Clover EFI installer log - Sun Apr 19 00:10:16 IST 2020
+Installer version: r5112 EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.3 GB   disk0
-   1:                        EFI EFI                     314.6 MB   disk0s1
-   2:                 Apple_APFS Container disk1         500.0 GB   disk0s2
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:       Microsoft Basic Data Untitled                1000.0 GB  disk0s2
 
-/dev/disk1 (synthesized):
+/dev/disk1 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +500.0 GB   disk1
-                                 Physical Store disk0s2
-   1:                APFS Volume Macintosh HD - Data     225.4 GB   disk1s1
-   2:                APFS Volume Preboot                 81.8 MB    disk1s2
-   3:                APFS Volume Recovery                528.1 MB   disk1s3
-   4:                APFS Volume VM                      2.1 GB     disk1s4
-   5:                APFS Volume Macintosh HD            11.2 GB    disk1s5
+   0:      GUID_partition_scheme                        *240.1 GB   disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk2         239.8 GB   disk1s2
 
-/dev/disk2 (external, physical):
+/dev/disk2 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *8.2 GB     disk2
-   1:                        EFI EFI                     209.7 MB   disk2s1
-   2:                  Apple_HFS Install macOS Mojave    7.8 GB     disk2s2
+   0:      APFS Container Scheme -                      +239.8 GB   disk2
+                                 Physical Store disk1s2
+   1:                APFS Volume OSX                     48.1 GB    disk2s1
+   2:                APFS Volume Preboot                 51.9 MB    disk2s2
+   3:                APFS Volume Recovery                510.4 MB   disk2s3
+   4:                APFS Volume VM                      20.5 KB    disk2s4
 
+Target volume /Volumes/OSX on disk2 is APFS on physical store disk1s2
 ======================================================
 Backing up EFI files
 
+Backing up /Volumes/OSX/EFIROOTDIR/EFI folder to /Volumes/OSX/EFI-Backups/r5102/2020-04-19-00h10/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
-Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Install macOS Mojave
-Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Install macOS Mojave
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing UEFI/SMCHelper.efi driver because VirtualSMC driver present
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
 
 ======================================================
 =========== Clover EFI Installation Finish ===========

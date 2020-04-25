@@ -134,7 +134,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1</string>
+		<string>dart=0 nv_disable=1 kext-dev-mode=1 slide=0</string>
+		<key>CustomLogo</key>
+		<string>Apple</string>
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
@@ -190,6 +192,12 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>ConsoleMode</key>
+		<string>0</string>
+		<key>CustomIcons</key>
+		<true/>
+		<key>simple</key>
+		<string>Light</string>
 		<key>Hide</key>
 		<array>
 			<string>Windows</string>
@@ -218,7 +226,7 @@
 		<key>ScreenResolution</key>
 		<string>3840×2160</string>
 		<key>Theme</key>
-		<string>tonymacx86</string>
+		<string>minimal</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -254,7 +262,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>
+				g/sPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -262,7 +272,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
+				<data>
+				g/s/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -270,7 +282,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g+MP0w==</data>
+				<data>
+				g+MP0w==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -278,7 +292,9 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>g+M/0w==</data>
+				<data>
+				g+M/0w==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -286,7 +302,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>
+				g/sPDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -294,7 +312,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
+				<data>
+				g/s/Dw==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -302,7 +322,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>g/8PDw==</data>
+				<data>
+				g/8PDw==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -310,7 +332,9 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/8/Dw==</data>
+				<data>
+				g/8/Dw==
+				</data>
 			</dict>
 		</array>
 	</dict>
@@ -321,7 +345,9 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>ROM</key>
-		<data>oHGP0keJ</data>
+		<data>
+		oHGP0keJ
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -369,6 +395,8 @@
 		<string>C02Z99ZKJWDW</string>
 		<key>SmUUID</key>
 		<string>F0CDF9A0-4149-4391-AF20-E717A1FECEC0</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
